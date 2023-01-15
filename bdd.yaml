@@ -1,0 +1,7 @@
+name: BDD Test Suite
+configFailurePolicy: skip
+tests:
+  - name: BDD Tests
+  classes:
+    - com.bdd.runners.LoginModuleRunner
+

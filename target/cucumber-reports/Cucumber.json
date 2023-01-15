@@ -1,0 +1,377 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "start_timestamp": "2023-01-14T17:12:18.199Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8948807865,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginStepsDefinations.setUpDriverAndPageObjects(Scenario)"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Verify that login is working with correct credentials",
+        "description": "",
+        "id": "login-module;verify-that-login-is-working-with-correct-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 100864508,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginStepsDefinations.performCleanUp(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5694246245,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "The user is on login/register page",
+            "match": {
+              "location": "loginStepsDefinations.openLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10548512799,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "The user enter the \"simplilearnaug2022\" in username field and \"simplilearnaug2022\" in password file and clicks login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"simplilearnaug2022\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"simplilearnaug2022\"",
+                  "offset": 62
+                }
+              ],
+              "location": "loginStepsDefinations.login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 142877377,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Login should be successful and user is on profile page with profile name as \"simplilearnaug2022\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"simplilearnaug2022\"",
+                  "offset": 76
+                }
+              ],
+              "location": "loginStepsDefinations.verifyLogin(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@positive"
+          },
+          {
+            "name": "@critical"
+          }
+        ]
+      }
+    ],
+    "name": "Login Module",
+    "description": "",
+    "id": "login-module",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/FeatureFiles/login.feature",
+    "tags": []
+  },
+  {
+    "line": 20,
+    "elements": [
+      {
+        "line": 21,
+        "name": "Login and go to profile page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5828214179,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user is on login/register page",
+            "match": {
+              "location": "loginStepsDefinations.openLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10402084812,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "The user enter the \"simplilearnaug2022\" in username field and \"simplilearnaug2022\" in password file and clicks login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"simplilearnaug2022\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"simplilearnaug2022\"",
+                  "offset": 62
+                }
+              ],
+              "location": "loginStepsDefinations.login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 120649081,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Login should be successful and user is on profile page with profile name as \"simplilearnaug2022\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"simplilearnaug2022\"",
+                  "offset": 76
+                }
+              ],
+              "location": "loginStepsDefinations.verifyLogin(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-14T17:12:18.199Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9739851508,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginStepsDefinations.setUpDriverAndPageObjects(Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Verify logout functionality",
+        "description": "",
+        "id": "profile-module;verify-logout-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 111227913,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginStepsDefinations.performCleanUp(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4573384759,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "The user clicks on signout link",
+            "match": {
+              "location": "loginStepsDefinations.signOut()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 86000696,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "The user should be signed out and redirected to homepage",
+            "match": {
+              "location": "loginStepsDefinations.verifySignOut()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@logout"
+          },
+          {
+            "name": "@positive"
+          },
+          {
+            "name": "@critical"
+          }
+        ]
+      }
+    ],
+    "name": "Profile Module",
+    "description": "",
+    "id": "profile-module",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/FeatureFiles/profile.feature",
+    "tags": []
+  },
+  {
+    "line": 22,
+    "elements": [
+      {
+        "start_timestamp": "2023-01-14T17:12:18.199Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9194649647,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginStepsDefinations.setUpDriverAndPageObjects(Scenario)"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Verify registration functionality",
+        "description": "",
+        "id": "registration-module;verify-registration-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 107777303,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginStepsDefinations.performCleanUp(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5635063361,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "The user is on login/register page",
+            "match": {
+              "location": "loginStepsDefinations.openLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1218135476,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "The user fills registration form with following information",
+            "match": {
+              "location": "loginStepsDefinations.fillRegisterationForm(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "simplilearndec2022",
+                  "simplilearndec2022@yopmail.com",
+                  "Simplilearndec@2022"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4939973624,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "clicks on register button",
+            "match": {
+              "location": "loginStepsDefinations.submitForm()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99863453,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "the user registration should be successful",
+            "match": {
+              "location": "loginStepsDefinations.verifyRegistration()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@register"
+          },
+          {
+            "name": "@positive"
+          },
+          {
+            "name": "@critical"
+          }
+        ]
+      }
+    ],
+    "name": "Registration Module",
+    "description": "",
+    "id": "registration-module",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/FeatureFiles/register.feature",
+    "tags": []
+  }
+]
